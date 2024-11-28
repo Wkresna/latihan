@@ -12,8 +12,10 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
+    menyambungkan ke admin.php
 */
-//group fungsinya semuaa function
+require_once('admin.php');
+//group fungsinya sem uaa function
 Route::controller(GeneralController::class)->group(function(){
     route::get('/','about'); //memanggil function index pada gerneral controller
     route::get('/education','education'); //memanggil function about pada gerneral controller --> tanda / tidak boleh kembar, shg yang brtkutnya ditambah kata about
